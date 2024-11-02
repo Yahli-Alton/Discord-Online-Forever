@@ -12,6 +12,9 @@ jobs:
   run-node-script:
     runs-on: ubuntu-latest
 
+    env:
+      token: ${{ secrets.discord }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
